@@ -43,7 +43,7 @@ $(document).ready(function() {
 	$(document).on('click', '.check', function() {
 		$(this).closest('p').removeClass('input').addClass('complete');
 		$(this).hide();
-		$('.circle').show();
+		$(this).siblings('.circle').show();
 		
 	});
 	
@@ -51,7 +51,7 @@ $(document).ready(function() {
 	$(document).on('click', '.circle' , function() {
 		$(this).closest('p').removeClass('complete').addClass('input');
 		$(this).hide();
-		$('.check').show();
+		$(this).siblings('.check').show();
 	});
 	
 	
